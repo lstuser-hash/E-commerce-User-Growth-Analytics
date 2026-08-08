@@ -1,80 +1,294 @@
 # 🛒 E-commerce User Growth Analytics Dashboard
 
+An end-to-end customer behavior analytics project based on **Python, RFM Customer Segmentation and Streamlit Dashboard**.
 
-## 📌 Project Overview
+This project analyzes e-commerce user purchasing behavior, identifies customer value groups, and provides business insights for customer retention and growth strategies.
 
-This project analyzes e-commerce customer behavior and user growth patterns using real-world transaction data.
+---
 
-The goal is to identify customer value segments, understand purchasing trends, and provide actionable business insights through an interactive analytics dashboard.
+# 📌 Project Overview
 
+Customer growth is one of the key challenges in e-commerce businesses.
 
-## 📊 Dashboard Preview
+This project builds a customer analytics platform that transforms raw transaction data into actionable business insights through:
 
-![Dashboard Preview](images/dashboard.png)
+* Customer behavior analysis
+* Order growth trend analysis
+* RFM customer segmentation
+* Customer value visualization
+* Retention strategy recommendations
 
+The final result is an interactive dashboard that helps businesses understand:
 
-## 🛠 Tech Stack
+* Who are the most valuable customers?
+* Which customers are at risk of churn?
+* How can customer retention be improved?
 
-- Python
-- Pandas
-- NumPy
-- Streamlit
-- Plotly
-- Matplotlib
-- Seaborn
+---
 
+# 🏗️ Project Architecture
 
-## 🔍 Analysis Methods
+```
+Raw Data
+    │
+    ▼
+Data Cleaning & Processing
+    │
+    ▼
+RFM Feature Engineering
+    │
+    ▼
+Customer Segmentation
+    │
+    ▼
+Interactive Streamlit Dashboard
+    │
+    ▼
+Business Insights
+```
 
-### 1. Customer Behavior Analysis
+---
 
-Analyzed customer purchasing behavior based on:
+# 🛠️ Tech Stack
 
-- Order frequency
-- Purchase value
-- Customer activity
+## Programming Language
 
+* Python
 
-### 2. Order Growth Analysis
+## Data Processing
+
+* Pandas
+* NumPy
+
+## Data Visualization
+
+* Plotly
+* Matplotlib
+
+## Dashboard
+
+* Streamlit
+
+## Development Environment
+
+* Jupyter Notebook
+* VS Code
+
+## Version Control
+
+* Git
+* GitHub
+
+---
+
+# 📊 Dataset
+
+The project uses the Brazilian E-Commerce Public Dataset from Olist.
+
+Main data sources include:
+
+* Customer information
+* Order transactions
+* Product information
+* Payment records
+* Review information
+* Seller information
+
+The raw dataset is excluded from this repository. Only processed analytical datasets are included.
+
+---
+
+# 🔍 Analysis Methods
+
+## 1. Customer Behavior Analysis
+
+Analyzed customer purchasing behavior through:
+
+* Purchase frequency
+* Spending patterns
+* Customer activity level
+
+---
+
+## 2. Order Growth Analysis
 
 Analyzed monthly order trends to understand:
 
-- Sales growth patterns
-- Seasonal changes
-- Customer demand trends
+* Business growth patterns
+* Seasonal changes
+* Sales development
 
+---
 
-### 3. RFM Customer Segmentation
+## 3. RFM Customer Segmentation
 
-Applied RFM analysis:
+Customers are segmented using three behavioral indicators:
 
-- Recency
-- Frequency
-- Monetary
+### Recency (R)
 
+How recently a customer purchased.
 
-Customer segments:
+### Frequency (F)
 
-| Segment | Description |
-|---|---|
-| Champions | High-value loyal customers |
-| Loyal Customers | Frequent purchasers |
-| Potential Customers | New customers with growth potential |
-| At Risk | Customers with declining activity |
-| Lost Customers | Inactive customers |
+How often a customer purchases.
 
+### Monetary (M)
 
-## 💡 Business Insights
+How much a customer spends.
 
-- Identify high-value customers for VIP programs
-- Develop retention strategies for at-risk customers
-- Improve customer engagement through segmentation
+Based on RFM scores, customers are divided into:
 
+| Segment            | Description                                          |
+| ------------------ | ---------------------------------------------------- |
+| 🏆 Champions       | High-value customers with strong purchasing behavior |
+| ❤️ Loyal Customers | Regular customers with stable engagement             |
+| ⚠️ At Risk         | Customers showing potential churn risk               |
+| 💤 Lost Customers  | Inactive customers requiring reactivation            |
 
-## 🚀 How to Run
+---
 
+# 📈 Dashboard Features
 
-Clone repository:
+## KPI Overview
+
+Displays:
+
+* Total Customers
+* Total Orders
+* Average Orders per Customer
+
+## Monthly Order Growth Trend
+
+Interactive visualization showing order volume changes over time.
+
+## Customer Segmentation Analysis
+
+Visualizes customer distribution across different RFM groups.
+
+## Customer Value Analysis
+
+Scatter plot showing the relationship between:
+
+* Purchase frequency
+* Customer spending
+
+## Customer Filtering
+
+Supports filtering customers by:
+
+* Customer state
+* Customer segment
+
+---
+
+# 💡 Business Insights
+
+## 🏆 Champions Customers
+
+Recommended actions:
+
+* VIP membership programs
+* Exclusive promotions
+* Personalized recommendations
+
+## ❤️ Loyal Customers
+
+Recommended actions:
+
+* Loyalty rewards
+* Cross-selling strategies
+* Engagement campaigns
+
+## ⚠️ At Risk Customers
+
+Recommended actions:
+
+* Retention campaigns
+* Personalized discounts
+* Re-engagement emails
+
+## 💤 Lost Customers
+
+Recommended actions:
+
+* Churn analysis
+* Reactivation campaigns
+* Cost-benefit evaluation
+
+---
+
+# 🚀 How to Run
+
+## 1. Clone Repository
 
 ```bash
-git clone your_repository_url
+git clone https://github.com/lstuser-hash/E-commerce-User-Growth-Analytics.git
+```
+
+## 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Launch Dashboard
+
+```bash
+cd dashboard
+
+streamlit run app.py
+```
+
+---
+
+# 📂 Project Structure
+
+```
+E-commerce-User-Growth-Analytics
+│
+├── dashboard
+│   └── app.py
+│
+├── data
+│   └── processed
+│       └── rfm_customer_segments.csv
+│
+├── images
+│   └── dashboard.png
+│
+├── notebooks
+│   └── analysis.ipynb
+│
+├── requirements.txt
+│
+└── README.md
+```
+
+---
+
+# 📷 Dashboard Preview
+
+![Dashboard](images/dashboard.png)
+
+---
+
+# 🎯 Future Improvements
+
+Possible extensions:
+
+* Customer lifetime value prediction
+* Churn prediction model
+* Customer recommendation system
+* Geographic customer analysis
+* Machine learning based segmentation
+
+---
+
+# 👤 Author
+
+GitHub:
+https://github.com/lstuser-hash
+
+---
+
+⭐ If you find this project useful, feel free to star the repository.
